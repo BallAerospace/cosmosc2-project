@@ -1,0 +1,25 @@
+* start a specific version - Done through .env file.
+* stop
+* upgrade to version - Done by updating .env file and stop/start (or just start if brave)
+* restrict to localhost - This should be default... Doesn't work without ssl anyways
+* run cosmos with local SSL CA passed to containers - needed to install additional packages, and/or connect to ssl externals
+
+open to network - remove 127.0.0.1 from compose.yaml - Remove Content Security Policy - How? or...
+Run cosmos traefik with SSL cert
+
+load local - done automatically in first init mode - also, button in UI
+save to local - button in UI
+
+configure unique passwords - set in .env file - done automatically in first init mode
+change passwords for configured system - rerun first init mode?
+
+consolidate to single init container
+automatically detect if init is needed
+run migrations if needed
+
+configure backups
+
+Folders:
+plugins
+local
+
