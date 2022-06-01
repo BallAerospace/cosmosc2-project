@@ -12,8 +12,6 @@
 load local - button in UI
 save to local - button in UI
 
-configure backups
-
 Folders:
 plugins
 local
