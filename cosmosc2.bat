@@ -30,18 +30,12 @@ if "%1" == "util" (
 GOTO usage
 
 :startup
-  CALL cosmos-control build || exit /b
   docker-compose -f compose.yaml up -d
   @echo off
 GOTO :EOF
 
 :stop
   docker-compose -f compose.yaml down
-  @echo off
-GOTO :EOF
-
-:restart
-  docker-compose -f compose.yaml restart
   @echo off
 GOTO :EOF
 
